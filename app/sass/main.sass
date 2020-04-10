@@ -27,5 +27,59 @@
     width: 100%
     height: calc( 100% - 100px )
 
+.list-markers
+    &-ul
+        background-color: #ffffff
+        border: 1px solid #cccccc
+    &-li
+        border-bottom: 1px solid #cccccc
+        padding: 5px
+        a
+            text-decoration: none
+            img
+                height: 14px
+            span
+                margin-left: 5px
+    &-li:last-child
+        border-bottom: none
+.map-pin
+    span
+        width: 40px
+        height: 40px
+        display: block
+        left: -15px
+        top: -40px
+        position: relative
+        border-radius: 50% 50% 0
+        transform: rotate(45deg)
+        border: 1px solid #FFFFFF
+.legend 
+    text-align: left
+    line-height: 18px
+    color: #555
+
+.info 
+    padding: 6px 8px
+    font: 14px/16px Arial, Helvetica, sans-serif
+    background: white
+    background: rgba(255,255,255,0.8)
+    box-shadow: 0 0 15px rgba(0,0,0,0.2)
+    border-radius: 5px
+    display: grid
+    justify-content: center
+    grid-template-columns: 1fr 1fr
+    .routes-gradient
+        background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 50%, rgba(0,255,0,1) 100%)
+        width: 20px
+        height: 220px
+    .routes-count
+        width: 20px
+        height: 220px
+        i
+            height: 20px
+            display: grid
+            justify-content: center
+            align-content: center
+
 
 @import "media" // Всегда в конце
